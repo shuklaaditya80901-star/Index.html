@@ -35,15 +35,16 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <!-- Updated Logo Section -->
+                    <!-- Logo Section with Fallback -->
                     <div class="flex items-center space-x-3">
-                        <img src="./klis.png" alt="Influx Business Solutions" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div class="hidden bg-teal-600 text-white p-2 rounded-lg">
-                            <span class="text-xl font-bold">IBS</span>
+                        <img src="./logo.png" alt="Influx Business Solutions" class="h-12 w-auto"
+                              onerror="this.src='./klis.png'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};">
+                        <div class="hidden items-center bg-gradient-to-r from-teal-600 to-teal-700 text-white px-3 py-2 rounded-lg shadow-lg">
+                            <span class="text-lg font-bold">IBS</span>
                         </div>
                         <div>
                             <div class="text-xl font-bold text-gray-900">Influx Business Solutions</div>
-                            <div class="text-xs text-gray-500">Connecting Talent with Opportunity</div>
+                            <div class="text-xs text-gray-500 hidden md:block">Connecting Talent with Opportunity</div>
                         </div>
                     </div>
                 </div>
@@ -301,13 +302,14 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <!-- Updated Footer Logo -->
+                    <!-- Footer Logo with Fallback -->
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="./klis.png" alt="Influx Business Solutions" class="h-12 w-auto filter brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div class="hidden bg-white text-teal-600 p-2 rounded-lg">
-                            <span class="text-xl font-bold">IBS</span>
+                        <img src="./logo.png" alt="Influx Business Solutions" class="h-10 w-auto filter brightness-0 invert"
+                              onerror="this.src='./klis.png'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};">
+                        <div class="hidden items-center bg-gradient-to-r from-teal-400 to-teal-500 text-gray-900 px-3 py-2 rounded-lg shadow-lg">
+                            <span class="text-sm font-bold">IBS</span>
                         </div>
-                        <div class="text-xl font-bold text-white">Influx Business Solutions</div>
+                        <div class="text-lg font-bold text-white">Influx Business Solutions</div>
                     </div>
                     <p class="text-gray-400">Connecting talent with opportunity through reliable, efficient, and tailored recruitment solutions.</p>
                 </div>
