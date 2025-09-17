@@ -35,7 +35,18 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-              <img src="./logo.png" alt="Influx Business Solutions" class="h-12 w-auto mb-4 brightness-0 invert">
+                    <!-- Updated Logo Section -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./klis.png" alt="Influx Business Solutions" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hidden bg-teal-600 text-white p-2 rounded-lg">
+                            <span class="text-xl font-bold">IBS</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">Influx Business Solutions</div>
+                            <div class="text-xs text-gray-500">Connecting Talent with Opportunity</div>
+                        </div>
+                    </div>
+                </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <button onclick="scrollToSection('home')" class="text-gray-700 hover:text-teal-600 transition-colors">Home</button>
                     <button onclick="scrollToSection('about')" class="text-gray-700 hover:text-teal-600 transition-colors">About</button>
@@ -290,7 +301,14 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-               <img src="./logo.png" alt="Influx Business Solutions" class="h-12 w-auto mb-4 brightness-0 invert">
+                    <!-- Updated Footer Logo -->
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="./klis.png" alt="Influx Business Solutions" class="h-12 w-auto filter brightness-0 invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hidden bg-white text-teal-600 p-2 rounded-lg">
+                            <span class="text-xl font-bold">IBS</span>
+                        </div>
+                        <div class="text-xl font-bold text-white">Influx Business Solutions</div>
+                    </div>
                     <p class="text-gray-400">Connecting talent with opportunity through reliable, efficient, and tailored recruitment solutions.</p>
                 </div>
                 <div>
@@ -361,3 +379,4 @@
     </script>
 </body>
 </html>
+
