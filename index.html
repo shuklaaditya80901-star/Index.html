@@ -27,6 +27,8 @@
         html { scroll-behavior: smooth; }
         .bg-gradient-to-br { background: linear-gradient(135deg, #f0fdfa 0%, #dbeafe 100%); }
         .backdrop-blur-sm { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+        .logo-container img { max-width: 180px; height: auto; }
+        .logo-container-footer img { max-width: 120px; height: auto; }
     </style>
 </head>
 <body class="min-h-screen bg-white">
@@ -35,16 +37,17 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <!-- Logo Section with Fallback -->
+                    <!-- Optimized Logo Section -->
                     <div class="flex items-center space-x-3">
-                        <img src="./logo.png" alt="Influx Business Solutions" class="h-12 w-auto"
-                              onerror="this.src='./klis.png'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};">
-                        <div class="hidden items-center bg-gradient-to-r from-teal-600 to-teal-700 text-white px-3 py-2 rounded-lg shadow-lg">
-                            <span class="text-lg font-bold">IBS</span>
-                        </div>
-                        <div>
-                            <div class="text-xl font-bold text-gray-900">Influx Business Solutions</div>
-                            <div class="text-xs text-gray-500 hidden md:block">Connecting Talent with Opportunity</div>
+                        <div class="logo-container">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPgouaW5mbHV4LWxvZ28gewogIGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzYW5zLXNlcmlmOwogIGZvbnQtd2VpZ2h0OiA3MDA7Cn0KLmluZmx1eC10ZXh0IHsKICBmb250LWZhbWlseTogJ0ludGVyJywgc2Fucy1zZXJpZjsKICBmb250LXdlaWdodDogNjAwOwp9Ci5pbmZsdXgtc3ViIHsKICBmb250LWZhbWlseTogJ0ludGVyJywgc2Fucy1zZXJpZjsKICBmb250LXdlaWdodDogNDAwOwp9Cjwvc3R5bGU+CjwvZGVmcz4KCjwhLS0gTG9nbyBTeW1ib2wgLS0+CjxjaXJjbGUgY3g9IjMwIiBjeT0iNDAiIHI9IjI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50MSkiLz4KPHN2ZyB4PSI4IiB5PSIxOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNMTIgMkw0IDdWMTdMMTIgMjJMMjAgMTdWN0wxMiAyWk0xMiA0LjE2TDE4IDhWMTZMMTIgMTkuODRMNiAxNlY4TDEyIDQuMTZaIi8+CiAgPHBhdGggZD0iTTEyIDhWMTZNOCAxMkgxNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cgo8IS0tIENvbXBhbnkgTmFtZSAtLT4KPHRleHQgeD0iNzAiIHk9IjM1IiBjbGFzcz0iaW5mbHV4LXRleHQiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiMxZTQwNGYiPkluZmx1eDwvdGV4dD4KPHR0ZXh0IHg9IjcwIiB5PSI1NSIgY2xhc3M9ImluZmx1eC1zdWIiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM0Yjc2ODgiPkJ1c2luZXNzIFNvbHV0aW9uczwvdGV4dD4KCjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwZDk0ODgiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGY3NjZlIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
+                                  alt="Influx Business Solutions"
+                                  class="h-12 w-auto"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden items-center bg-gradient-to-r from-teal-600 to-teal-700 text-white px-4 py-2 rounded-lg shadow-lg">
+                                <div class="text-lg font-bold">INFLUX</div>
+                                <div class="text-xs opacity-90 ml-2">Business Solutions</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,14 +305,16 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <!-- Footer Logo with Fallback -->
-                    <div class="flex items-center space-x-3 mb-4">
-                        <img src="./logo.png" alt="Influx Business Solutions" class="h-10 w-auto filter brightness-0 invert"
-                              onerror="this.src='./klis.png'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};">
+                    <!-- Footer Logo -->
+                    <div class="logo-container-footer mb-4">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgMTYwIDY0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPgouaW5mbHV4LWxvZ28gewogIGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzYW5zLXNlcmlmOwogIGZvbnQtd2VpZ2h0OiA3MDA7Cn0KLmluZmx1eC10ZXh0IHsKICBmb250LWZhbWlseTogJ0ludGVyJywgc2Fucy1zZXJpZjsKICBmb250LXdlaWdodDogNjAwOwp9Ci5pbmZsdXgtc3ViIHsKICBmb250LWZhbWlseTogJ0ludGVyJywgc2Fucy1zZXJpZjsKICBmb250LXdlaWdodDogNDAwOwp9Cjwvc3R5bGU+CjwvZGVmcz4KCjwhLS0gTG9nbyBTeW1ib2wgLS0+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMzIiIHI9IjIwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MSkiLz4KPHN2ZyB4PSI2IiB5PSIxNCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNMTIgMkw0IDdWMTdMMTIgMjJMMjAgMTdWN0wxMiAyWk0xMiA0LjE2TDE4IDhWMTZMMTIgMTkuODRMNiAxNlY4TDEyIDQuMTZaIi8+CiAgPHBhdGggZD0iTTEyIDhWMTZNOCAxMkgxNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cgo8IS0tIENvbXBhbnkgTmFtZSAtLT4KPHR0ZXh0IHg9IjU2IiB5PSIyOCIgY2xhc3M9ImluZmx1eC10ZXh0IiBmb250LXNpemU9IjE4IiBmaWxsPSJ3aGl0ZSI+SW5mbHV4PC90ZXh0Pgo8dGV4dCB4PSI1NiIgeT0iNDQiIGNsYXNzPSJpbmZsdXgtc3ViIiBmb250LXNpemU9IjEwIiBmaWxsPSIjOWNhM2FmIj5CdXNpbmVzcyBTb2x1dGlvbnM8L3RleHQ+Cgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGQ5NDg4Ii8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBmNzY2ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg=="
+                              alt="Influx Business Solutions"
+                              class="h-8 w-auto"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="hidden items-center bg-gradient-to-r from-teal-400 to-teal-500 text-gray-900 px-3 py-2 rounded-lg shadow-lg">
-                            <span class="text-sm font-bold">IBS</span>
+                            <div class="text-sm font-bold">INFLUX</div>
+                            <div class="text-xs opacity-90 ml-2">Business Solutions</div>
                         </div>
-                        <div class="text-lg font-bold text-white">Influx Business Solutions</div>
                     </div>
                     <p class="text-gray-400">Connecting talent with opportunity through reliable, efficient, and tailored recruitment solutions.</p>
                 </div>
@@ -381,4 +386,3 @@
     </script>
 </body>
 </html>
-
